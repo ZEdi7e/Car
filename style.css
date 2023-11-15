@@ -1,0 +1,69 @@
+.car {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  left: -250px;
+  animation: drive 2s ease-in forwards;
+}
+
+@keyframes drive {
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: calc(100vw - 250px - 50px);
+  }
+}
+
+.car .body {
+  width: 200px;
+  height: 60px;
+  background-color: gray;
+  position: absolute;
+  bottom: 0;
+}
+
+.car .roof {
+  width: 120px;
+  height: 20px;
+  background-color: gray;
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+}
+
+.car .front {
+  width: 20px;
+  height: 40px;
+  background-color: gray;
+  position: absolute;
+  bottom: 0;
+  left: 180px;
+}
+
+.car .back {
+  width: 20px;
+  height: 40px;
+  background-color: gray;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.car .front-wheel,
+.car .back-wheel {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+}
+
+.car .front-wheel {
+  left: 160px;
+}
+
+.car .back-wheel {
+  left: 0;
+}
